@@ -45,3 +45,36 @@ created datetime,
 PRIMARY KEY (id)
 CHECK (age >= 18) 
 );
+
+CREATE TABLE persons6(
+id int NOT NULL,
+name varchar(100) NOT NULL, 
+age int,
+email varchar(50),
+created datetime DEFAULT CUTTENT_TIMESTAMP(),
+PRIMARY KEY (id)
+CHECK (age >= 18) 
+);
+
+
+CREATE TABLE persons7(
+id int NOT NULL IDENTITY (1,1)--(SE INCREMENTA DE 1 EN 1)
+name varchar(100) NOT NULL, 
+age int,
+email varchar(50),
+created datetime DEFAULT CUTTENT_TIMESTAMP(),
+PRIMARY KEY (id)
+CHECK (age >= 18) 
+);
+
+
+
+
+
+
+
+
+
+
+
+
